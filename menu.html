@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Menu</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    nav {
+        background-color: #444;
+        color: #fff;
+        padding: 10px 20px;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
+    }
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    section {
+        padding: 20px;
+    }
+    .menu-category {
+        margin-bottom: 30px;
+    }
+    .menu-category h2 {
+        margin-top: 0;
+    }
+    .menu-item {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .menu-item h3 {
+        margin-top: 0;
+    }
+    .menu-item p {
+        margin-bottom: 0;
+    }
+    .menu-item button {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .menu-item button:hover {
+        background-color: #555;
+    }
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Restaurant Menu</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section>
+    <div class="menu-category">
+        <h2>Breakfast</h2>
+        <div class="menu-item">
+            <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+    }
+    .title {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .food-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+    .card {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        padding: 20px;
+        max-width: 200px;
+    }
+    .card img {
+        max-width: 100%;
+        height: auto;
+    }
+    .card-body {
+        text-align: center;
+    }
+</style>
+<h1 class="title">Break Fast</h1>
+    <div class="food-list">
+      <div class="card-container">
+        <div class="card">
+          <img src="dosa.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">dosa</h2>
+<P> PRICE:50</P>
+ <button onclick="placeOrder('dosa')">Order</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="poori.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">poori</h2>
+<P> PRICE:100</P>
+<button onclick="placeOrder('poori')">Order</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="chapathi.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">chapathi</h2>
+<P> PRICE:40</P>
+<button onclick="placeOrder('chapathi')">Order</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="pongal.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">pongal</h2>
+<P> PRICE:80</P>
+<button onclick="placeOrder('pongal')">Order</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="chilliidli.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">chilli idli</h2>
+<P> PRICE:80</P>
+<button onclick="placeOrder('chilli idli')">Order</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="idli.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">idli</h2>
+<P> PRICE:30</P>
+<button onclick="placeOrder('idli')">Order</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="vada.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">vada</h2>
+<P> PRICE:30</P>
+<button onclick="placeOrder('vada')">Order</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="sandwich.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">sandwitch</h2>
+<P> PRICE:70</P>
+<button onclick="placeOrder('sandwitch')">Order</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="bread.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">bread</h2>
+<P> PRICE:50</P>
+<button onclick="placeOrder('bread')">Order</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="idiyappam.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">idiyappam</h2>
+<P> PRICE:45</P>
+<button onclick="placeOrder('idiyappam')">Order</button>          
+</div>
+        </div>
+        <div class="card">
+          <img src="paniyaram.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">paniyaram</h2>
+<P> PRICE:55</P>     
+<button onclick="placeOrder('paniyaram')">Order</button>          
+</div>
+        </div>
+        <div class="card">
+          <img src="puttu.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">puttu</h2>
+<P> PRICE:35</P>          
+<button onclick="placeOrder('puttu')">Order</button>     
+</div>
+        </div>
+        <div class="card">
+          <img src="alluchapathi.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">allu chapathi</h2>    
+<P> PRICE:60</P>   
+<button onclick="placeOrder('allu chapathi')">Order</button>      
+    </div>
+        </div>
+        <div class="card">
+          <img src="pavbhaji.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">pav bhaji</h2>
+<P> PRICE:35</P>    
+<button onclick="placeOrder('pav bhaji')">Order</button>         
+</div>
+        </div>
+      </div>
+    </div>
+        </div>
+    </div>
+    
+    <div class="menu-category">
+        <h2>Lunch</h2>
+        <div class="menu-item">
+ <h1 class="title">Lunch</h1>
+     <div class="food-list">
+      <div class="card-container">
+        <div class="card">
+          <img src="briyani.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Briyani</h2>
+<P>PRICE:250</P>
+<button onclick="placeOrder('Briyani')">Order</button>  
+          </div>
+        </div>
+        <div class="card">
+          <img src="muttonbriyani.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Mutton Briyani</h2>
+<P>PRICE:300</P>
+<button onclick="placeOrder('Mutton Briyani')">Order</button>  
+          </div>
+        </div>
+        <div class="card">
+          <img src="meals.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Meals</h2>
+<P>PRICE:180</P>
+<button onclick="placeOrder('Meals')">Order</button>  
+          </div>
+        </div>
+        <div class="card">
+          <img src="fishfry.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Fish Fry</h2>
+<P>PRICE:150</P>
+<button onclick="placeOrder('Fish Fry')">Order</button>  
+          </div>
+        </div>
+        <div class="card">
+          <img src="chickenfry.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Chicken Fry</h2>
+<P>PRICE:90</P>
+<button onclick="placeOrder('Chicken Fry')">Order</button>  
+          </div>
+        </div>
+        <div class="card">
+          <img src="friedrice.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Fried Rice</h2>
+<P>PRICE:120</P>
+<button onclick="placeOrder('Fried Rice')">Order</button>  
+          </div>
+        </div>
+        <div class="card">
+          <img src="pran.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Pran</h2>
+<P>PRICE:110</P>
+<button onclick="placeOrder('Pran')">Order</button>  
+          </div>
+        </div>
+        <div class="card">
+                <img src="chickenrice.jpg" class="card-img" alt="" />
+                <div class="card-body">
+                  <h2 class="name">Chicken Rice</h2>
+<P>PRICE:140</P>
+<button onclick="placeOrder('Chicken Rice')">Order</button>  
+          </div>
+        </div>
+        <div class="card">
+          <img src="payasam.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Payasam</h2>
+<P>PRICE:150</P>
+<button onclick="placeOrder('Payasam')">Order</button>  
+          </div>
+        </div>
+      </div>
+    </div>
+        </div>
+    </div>
+    
+    <div class="menu-category">
+        <h2>Snacks</h2>
+        <div class="menu-item">
+ <h1 class="title">Snacks</h1>
+    <div class="food-list">
+      <div class="card-container">
+        <div class="card">
+          <img src="mocktail.jpg" class="card-img" alt="" />
+          <div class="card-body">
+<h2 class="name">Mocktail</h2>
+<p>PRICE:100</p>
+<button onclick="placeOrder('Mocktail')">Order</button>  
+        </div>
+</div>
+        <div class="card">
+                <img src="cupcake.jpg" class="card-img" alt="" />
+                <div class="card-body">
+                  <h2 class="name">Cup Cake</h2>
+<P>PRICE:40</P>
+<button onclick="placeOrder('Cup Cake')">Order</button>  
+                </div>
+              </div>
+              <div class="card">
+                    <img src="frenchfries.jpg" class="card-img" alt="" />
+                    <div class="card-body">
+                      <h2 class="name">French Fries</h2>
+<P>PRICE:70</P>
+<button onclick="placeOrder('French Fries')">Order</button>  
+                    </div>
+                  </div>
+                  <div class="card">
+                        <img src="vegroll.jpg" class="card-img" alt="" />
+                        <div class="card-body">
+                          <h2 class="name">Veg Roll</h2>
+<P>PRICE:90</P>
+<button onclick="placeOrder('Veg Roll')">Order</button>  
+                      </div>
+</div>
+                      <div class="card">
+                            <img src="icecream.jpg" class="card-img" alt="" />
+                            <div class="card-body">
+                              <h2 class="name">Ice Cream</h2>
+<P>PRICE:60</P>
+<button onclick="placeOrder('Ice Cream')">Order</button>  
+                            </div>
+                          </div>
+                          <div class="card">
+                                <img src="cake3.jpg" class="card-img" alt="" />
+                                <div class="card-body">
+                                  <h2 class="name">Cake</h2>
+<P>PRICE:50</P>
+<button onclick="placeOrder('Cake')">Order</button>  
+                                </div>
+                              </div>
+                              <div class="card">
+                                    <img src="mojito.jpg" class="card-img" alt="" />
+                                    <div class="card-body">
+                                      <h2 class="name">Mojito</h2>
+<P>PRICE:75</P>
+<button onclick="placeOrder('Mojito')">Order</button>  
+                                    </div>
+                                  </div>
+                                  <div class="card">
+                                        <img src="cheeseball.jpg" class="card-img" alt="" />
+                                        <div class="card-body">
+                                          <h2 class="name">Cheese Balls</h2>
+<P>PRICE:100</P>
+<button onclick="placeOrder('Cheese Balls')">Order</button>  
+                                        </div>
+                                      </div>
+                                      <div class="card">
+                                            <img src="panipoori.jpg" class="card-img" alt="" />
+                                            <div class="card-body">
+                                              <h2 class="name">Pani Poori</h2>
+<P>PRICE:40</P>
+<button onclick="placeOrder('Pani Poori')">Order</button>  
+                                            </div>
+                                          </div>
+                                          <div class="card">
+                                                <img src="masalapoori.jpg" class="card-img" alt="" />
+                                                <div class="card-body">
+                                                  <h2 class="name">Masala Poori</h2>
+<P>PRICE:45</P>
+<button onclick="placeOrder('Masala Poori')">Order</button>  
+                                                </div>
+                                              </div>
+                                              <div class="card">
+                                                    <img src="falooda.jpg" class="card-img" alt="" />
+                                                    <div class="card-body">
+                                                      <h2 class="name">Falooda</h2>
+<P>PRICE:65</P>
+<button onclick="placeOrder('Falooda')">Order</button>  
+                                                    </div>
+                                                  </div>
+                                                  <div class="card">
+                                                        <img src="gulabjamu.jpg" class="card-img" alt="" />
+                                                        <div class="card-body">
+                                                          <h2 class="name">Gulab Jamu</h2>
+<P>PRICE:50</P>
+<button onclick="placeOrder('Gulab Jamu')">Order</button>  
+                                                        </div>
+                                                      </div>
+      </div>
+    </div>
+        </div>
+    </div>
+    
+    <div class="menu-category">
+        <h2>Dinner</h2>
+        <div class="menu-item">
+<h1 class="title">Dinner</h1>
+<div class="food-list">
+      <div class="card-container">
+        <div class="card">
+          <img src="pizza.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h2 class="name">Pizza</h2>
+<p>PRICE:250</p>
+<button onclick="placeOrder('Pizza')">Order</button>  
+          </div>
+        </div>
+        <div class="card">
+                <img src="burger.jpg" class="card-img" alt="" />
+                <div class="card-body">
+                  <h2 class="name">Burger</h2>
+<p>PRICE:230</p>
+<button onclick="placeOrder('Burger')">Order</button>  
+                </div>
+              </div>
+              <div class="card">
+                    <img src="nan.jpg" class="card-img" alt="" />
+                    <div class="card-body">
+                      <h2 class="name">Nan</h2>
+<p>PRICE:150</p>
+<button onclick="placeOrder('Nan')">Order</button>  
+                    </div>
+                  </div>
+                  <div class="card">
+                        <img src="porata.jpg" class="card-img" alt="" />
+                        <div class="card-body">
+                          <h2 class="name">Parotta</h2>
+<p>PRICE:50</p>
+<button onclick="placeOrder('Parotta')">Order</button>  
+                        </div>
+                      </div>
+                      <div class="card">
+                            <img src="chilliporata.jpg" class="card-img" alt="" />
+                            <div class="card-body">
+                              <h2 class="name">Chilli Parotta</h2>
+<p>PRICE:120</p>
+<button onclick="placeOrder('Chilli Parotta')">Order</button>  
+                            </div>
+                          </div>
+                          <div class="card">
+                                <img src="tandoori.jpg" class="card-img" alt="" />
+                                <div class="card-body">
+                                  <h2 class="name">Tandoori</h2>
+<p>PRICE:160</p>
+<button onclick="placeOrder('Tandoori')">Order</button>  
+                                </div>
+                              </div>
+                              <div class="card">
+                                    <img src="kothuporata.jpg" class="card-img" alt="" />
+                                    <div class="card-body">
+                                      <h2 class="name">Kothu Parotta</h2>
+<p>PRICE:120</p>
+<button onclick="placeOrder('Kothu Parotta')">Order</button>  
+                                    </div>
+                                  </div>
+                                  <div class="card">
+                                        <img src="kfc.jpg" class="card-img" alt="" />
+                                        <div class="card-body">
+                                          <h2 class="name">KFC Chicken</h2>
+<p>PRICE:160</p>
+<button onclick="placeOrder('KFC Chicken')">Order</button>  
+                                        </div>
+                                      </div>
+                                      <div class="card">
+                                            <img src="browini.jpg" class="card-img" alt="" />
+                                            <div class="card-body">
+                                              <h2 class="name">Browini</h2>
+<p>PRICE:100</p>
+<button onclick="placeOrder('Browini')">Order</button>  
+                                            </div>
+                                          </div>
+                                          <div class="card">
+                                                <img src="rasagulla.jpg" class="card-img" alt="" />
+                                                <div class="card-body">
+                                                  <h2 class="name">Rasagulla</h2>
+<p>PRICE:40</p>
+<button onclick="placeOrder('Rasagulla')">Order</button>  
+                                                </div>
+                                              </div>
+      </div>
+    </div>
+       
+</section>
+
+<footer>
+    <p>&copy; 2024 Indian Restaurant. All rights reserved.</p>
+</footer>
+
+<script>
+    function placeOrder(item) {
+        // You can replace this alert with actual order processing logic
+        alert("Order placed for " + item);
+    }
+</script>
+
+</body>
+</html>

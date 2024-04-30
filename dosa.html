@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Website</title>
+<script>
+    function placeOrder(item) {
+        // You can replace this alert with actual order processing logic
+        alert("Order placed for " + item);
+    }
+</script>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Our Restaurant</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section>
+    <h2>Menu</h2>
+    <ul>
+        <li>
+            <h3>Biryani</h3>
+            <p>Description: Delicious rice dish with spices, meat, and vegetables.</p>
+            <button onclick="placeOrder('Biryani')">Order Biryani</button>
+        </li>
+        <!-- Add more menu items here -->
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2024 Restaurant Name. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

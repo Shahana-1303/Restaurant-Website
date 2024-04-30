@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Options</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+        margin-top: 0;
+    }
+    .payment-options {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .payment-card {
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        flex: 1 1 200px;
+        text-align: center;
+    }
+    .payment-card img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Payment Options</h1>
+</header>
+
+<div class="container">
+    <h2>Select a Payment Option</h2>
+    <div class="payment-options">
+        <div class="payment-card" onclick="processPayment('Credit Card')">
+            <img src="c1.jpg" alt="Credit Card">
+            <h3>Credit Card</h3>
+            <p>We accept all major credit cards.</p>
+        </div>
+        <div class="payment-card" onclick="processPayment('PayPal')">
+            <img src="c2.jpg" alt="PayPal">
+            <h3>PayPal</h3>
+            <p>Pay securely with PayPal.</p>
+        </div>
+        <div class="payment-card" onclick="processPayment('Google Pay')">
+            <img src="c3.jpg" alt="Google Pay">
+            <h3>Google Pay</h3>
+            <p>Conveniently pay with Google Pay.</p>
+        </div>
+        <div class="payment-card" onclick="processPayment('Cash On Delivery')">
+            <img src="c4.jpg" alt="Apple Pay">
+            <h3>Cash On Delivery</h3>
+            <p> pay with Cash On Delivery.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+function processPayment(paymentMethod) {
+    // Simulate processing payment
+    alert('Processing payment with ' + paymentMethod);
+    // Here you can add actual payment processing logic
+}
+</script>
+
+</body>
+</html>

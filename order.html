@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Status</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #555;
+    }
+    .status {
+        margin-top: 20px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Check Order Status</h1>
+</header>
+
+<div class="container">
+    <form id="order-status-form">
+        <label for="order-id">Enter Order ID:</label>
+        <input type="text" id="order-id" name="order-id" required>
+
+        <input type="submit" value="Check Status">
+    </form>
+
+    <div class="status" id="status-result">
+        <!-- Status will be displayed here -->
+    </div>
+</div>
+
+<script>
+    document.getElementById("order-status-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Get order ID
+        const orderId = document.getElementById("order-id").value;
+
+        // Simulate status check (replace this with your actual backend logic)
+        const status = getStatusFromBackend(orderId);
+
+        // Display status
+        displayStatus(status);
+    });
+
+    // Function to simulate backend call and get status
+    function getStatusFromBackend(orderId) {
+        // Simulate backend logic (replace this with actual backend API call)
+        // In this example, we are randomly generating a status
+        const statuses = ["Processing", "Shipped", "Delivered"];
+        const randomIndex = Math.floor(Math.random() * statuses.length);
+        return statuses[randomIndex];
+    }
+
+    // Function to display status
+    function displayStatus(status) {
+        const statusElement = document.getElementById("status-result");
+        statusElement.innerHTML = `<p>Order Status: <strong>${status}</strong></p>`;
+    }
+</script>
+
+</body>
+</html>
+
